@@ -16,7 +16,10 @@ mysql_select_db("wifi" ,$con);
 		if($username==$s[3]&&$password==$s[4]){
 			echo "have";
 			$_SESSION['username'] = $username;
-			// echo $_SESSION['username']." session";
+			echo $_SESSION['username']." session";
+			echo "<script >";
+			echo "window.location='profile.html'";
+			echo "</script>";
 		}
 		else{
 			echo "dont have";
