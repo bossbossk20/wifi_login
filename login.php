@@ -15,11 +15,12 @@ mysql_select_db("wifi" ,$con);
 		echo '</br>';
 		if($username==$s[3]&&$password==$s[4]){
 			echo "have";
-			$_SESSION['username'] = $username;
-			echo $_SESSION['username']." session";
-			echo "<script >";
-			echo "window.location='profile.html'";
-			echo "</script>";
+			$_SESSION['name'] = $s[1];
+			 echo $_SESSION['name']." session";
+			 echo $_SESSION['surname'] = $s[2];
+			// echo "<script >";
+			// echo "window.location='profile.html'";
+			// echo "</script>";
 		}
 		else{
 			echo "dont have";
